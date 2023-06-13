@@ -1,0 +1,34 @@
+Exercice JavaScript : véhicules orientés objet
+Objectif
+L'objectif de cet exercice est de comprendre les concepts d'orienté objet et d'héritage en JavaScript en créant une hiérarchie de classes pour des véhicules.
+
+Instructions
+Créez une classe de base Vehicle qui a les propriétés suivantes :
+brand : la marque du véhicule (string)
+model : le modèle du véhicule (string)
+year : l'année de fabrication du véhicule (number)
+color : la couleur du véhicule (string)
+Ajoutez une méthode move à la classe Vehicle qui affiche "The vehicle is moving".
+
+Créez une sous-classe Car qui étend la classe Vehicle et a une propriété supplémentaire fuel qui représente la quantité d'essence présente dans le véhicule (par défaut à 0, ressources en bas de page).
+
+Redéfinissez la méthode move pour la classe Car afin qu'elle affiche "The car is moving" si du fuel est présent et "Please, refuel the car." si le fuel est à 0.
+
+Créez une sous-classe Bike qui étend la classe Vehicle.
+
+Redéfinissez la méthode move pour la classe Bike afin qu'elle affiche "The bike is moving".
+
+Créez une instance de la classe Car et une instance de la classe Bike.
+
+Appelez la méthode move pour chaque instance et vérifiez que le message approprié est affiché pour chaque véhicule. En cas de besoin, remettez du fuel dans la voiture avant d'essayer de le refaire bouger.
+
+Bonus
+
+Ajouter une méthode addFuel qui prend en paramètre une quantité de fuel et l'ajoute à la quantité de fuel déjà présente.
+Cette méthode verifie que la quantité de fuel qu'on ajoute ne fait pas dépasser les 100 litres.
+La propriété fuel devient privé.
+La logique veut qu'il n'y ai que la méthode addFuel qui permette d'ajouter du fuel dans la voiture.
+Ressources
+MDN Web Docs - Classes
+MDN Web Docs - Inheritance and the prototype chain
+MDN Web Docs - Default parameters
